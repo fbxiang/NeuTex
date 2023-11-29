@@ -94,7 +94,7 @@ def test(model, dataset, visualizer, opt, test_steps):
 
 
 def main():
-    torch.backends.cudnn.benchmark = True
+    # torch.backends.cudnn.benchmark = False
     opt = TrainOptions().parse()
 
     torch.manual_seed(opt.seed)

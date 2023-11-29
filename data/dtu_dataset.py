@@ -1,3 +1,5 @@
+import logging
+
 import numpy as np
 import torch
 import os
@@ -46,7 +48,7 @@ class DtuDataset(BaseDataset):
 
     def initialize(self, opt):
         self.opt = opt
-        self.data_dir = opt.data_root
+        self.data_dir = "/workspaces/NeuTex/run/DTU/scan114/trainData"
 
         self.campos = np.load(self.data_dir + "/in_camOrgs.npy")
         self.camat = np.load(self.data_dir + "/in_camAts.npy")

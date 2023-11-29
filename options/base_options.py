@@ -155,8 +155,8 @@ class BaseOptions:
         opt.gpu_ids = [
             int(x) for x in opt.gpu_ids.split(",") if x.strip() and int(x) >= 0
         ]
-        if len(opt.gpu_ids) > 0:
-            torch.cuda.set_device(opt.gpu_ids[0])
+        # if len(opt.gpu_ids) > 0:
+        #     torch.cuda.set_device(opt.gpu_ids[0])
 
         self.opt = opt
         return self.opt

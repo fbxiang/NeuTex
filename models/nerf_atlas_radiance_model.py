@@ -289,7 +289,7 @@ class NerfAtlasRadianceModel(BaseModel):
         self.model_names = ["nerf_atlas"]
         self.net_nerf_atlas = NerfAtlasNetwork(opt, self.device)
 
-        assert self.opt.gpu_ids, "gpu is required"
+        # assert self.opt.gpu_ids, "gpu is required"
         if self.opt.gpu_ids:
             self.net_nerf_atlas.to(self.device)
             self.net_nerf_atlas = torch.nn.DataParallel(
