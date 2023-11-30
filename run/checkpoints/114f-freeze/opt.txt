@@ -1,0 +1,55 @@
+----------------- Options ---------------
+      atlasnet_activation: relu                          	[default: None]
+               batch_size: 1                             
+          checkpoints_dir: ./checkpoints/                	[default: ./checkpoints]
+                data_root: DTU/scan114f/trainData        	[default: None]
+             dataset_name: dtu                           	[default: None]
+                    debug: False                         
+       freeze_subnetworks: nerf,atlas,inverse_atlas      	[default: None]
+   geometry_embedding_dim: 64                            	[default: None]
+                  gpu_ids: 0                             
+                 is_train: True                          	[default: None]
+         load_subnetworks:                               
+     load_subnetworks_dir: None                          
+   load_subnetworks_epoch: latest                        
+           loss_bg_weight: 1.0                           	[default: None]
+      loss_chamfer_weight: -1.0                          	[default: None]
+        loss_color_weight: 1.0                           	[default: None]
+      loss_density_weight: -1.0                          	[default: None]
+loss_inverse_mapping_weight: -1.0                          	[default: None]
+loss_inverse_selection_weight: -1.0                          	[default: None]
+   loss_inverse_uv_weight: -1.0                          	[default: None]
+       loss_origin_weight: 1                             
+                       lr: 0.0001                        	[default: 0.001]
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+         max_dataset_size: inf                           
+                    model: nerf_atlas_radiance           	[default: None]
+                n_threads: 2                             	[default: 4]
+                     name: 114f-freeze                   	[default: None]
+                    niter: 1000000                       	[default: 100]
+              niter_decay: 0                             	[default: 100]
+     points_per_primitive: 2500                          	[default: None]
+          primitive_count: 1                             	[default: None]
+           primitive_type: sphere                        	[default: None]
+               print_freq: 20                            	[default: 100]
+            random_sample: balanced                      	[default: no_crop]
+       random_sample_size: 24                            	[default: 64]
+               resume_dir: ./checkpoints//114f           	[default: ]
+             resume_epoch: latest                        
+               sample_num: 256                           	[default: None]
+           save_iter_freq: 10000                         	[default: 1000]
+                     seed: 0                             
+           serial_batches: 0                             
+              sphere_init: -1                            
+                test_freq: 10000                         	[default: 500]
+                 test_num: 1                             
+               test_views: 6,13,35,30                    
+    texture_decoder_depth: 5,3                           	[default: 4,2]
+     texture_decoder_type: texture_view_mlp_mix          	[default: None]
+    texture_decoder_width: 256                           	[default: 128]
+                timestamp: False                         
+           train_and_test: 1                             	[default: 0]
+            use_test_data: -1                            
+                  verbose: True                          	[default: False]
+----------------- End -------------------

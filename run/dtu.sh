@@ -37,7 +37,7 @@ gpu_ids='0'
 checkpoints_dir='./checkpoints/'
 resume_checkpoints_dir=$checkpoints_dir
 
-save_iter_freq=10000
+save_iter_freq=1000
 niter=500000
 niter_decay=0
 
