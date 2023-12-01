@@ -38,7 +38,7 @@ loss_inverse_selection_weight: -1.0                          	[default: None]
                resume_dir: ./checkpoints//114f           	[default: ]
              resume_epoch: latest                        
                sample_num: 256                           	[default: None]
-           save_iter_freq: 10000                         	[default: 1000]
+           save_iter_freq: 1000                          
                      seed: 0                             
            serial_batches: 0                             
               sphere_init: -1                            
