@@ -25,7 +25,7 @@ loss_inverse_selection_weight: -1.0                          	[default: None]
                 lr_policy: lambda                        
          max_dataset_size: inf                           
                     model: nerf_atlas_radiance           	[default: None]
-                n_threads: 2                             	[default: 4]
+                n_threads: 0                             	[default: 4]
                      name: 114f-freeze                   	[default: None]
                     niter: 1000000                       	[default: 100]
               niter_decay: 0                             	[default: 100]

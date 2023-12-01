@@ -39,7 +39,7 @@ save_iter_freq=1000
 niter=1000000
 niter_decay=0
 
-n_threads=2
+n_threads=0
 
 train_and_test=1
 test_num=1
