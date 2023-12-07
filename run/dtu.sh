@@ -84,4 +84,5 @@ python3 train.py  \
         --test_freq=$test_freq  \
         --verbose  \
         --texture_decoder_width=256  \
-        --texture_decoder_depth=5,3
+        --texture_decoder_depth=5,3    \
+        --resume_dir=$resume_checkpoints_dir/${1}

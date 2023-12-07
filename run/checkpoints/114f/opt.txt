@@ -35,7 +35,7 @@ loss_inverse_selection_weight: -1.0                          	[default: None]
                print_freq: 20                            	[default: 100]
             random_sample: balanced                      	[default: no_crop]
        random_sample_size: 24                            	[default: 64]
-               resume_dir:                               
+               resume_dir: ./checkpoints//114f           	[default: ]
              resume_epoch: latest                        
                sample_num: 64                            	[default: None]
            save_iter_freq: 1000                          
